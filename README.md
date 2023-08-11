@@ -1,38 +1,18 @@
-# create-svelte
+## YoRipe Simple Chat App Client
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
+## Running the app
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
+# install all dependencies
+$ npm install
 
-# create a new project in my-app
-npm create svelte@latest my-app
+# copy .env.example file to .env
+$ cp .env.example .env
+
+# fill .env file with your local configuration
+# .env file example
+# .env variable's name must start with VITE so vite will automatically recognize it
+VITE_BASE_URL=http://localhost:3030
+
+# run the app
+$ npm run dev
 ```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
